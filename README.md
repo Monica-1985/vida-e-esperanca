@@ -14,7 +14,7 @@ Apresentar um site acessível, responsivo e otimizado, com práticas profissiona
 
 ## 🔗 Deploy
 Acesse o site publicado:  
-👉 [https://monica-1985.github.io/vida-e-esperanca/](https://monica-1985.github.io/vida-e-esperanca/)
+👉 [https://monica-1985.github.io/vidaeesperanca/](https://monica-1985.github.io/vidaeesperanca/)
 
 ## 🦾 Recursos Implementados
 - Navegação por teclado
@@ -32,6 +32,3 @@ Acesse o site publicado:
 ## 👩‍💻 Autora
 **Monica Soares Sena**  
 Projeto acadêmico – 2025
-
-
-
