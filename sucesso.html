@@ -1,119 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro Enviado!</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-    body {
-<<<<<<< HEAD
-      font-family: 'Inter', sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Enviado!</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
 
-    /* Animação suave de entrada */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px) scale(0.95);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-    }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color .4s, color .4s;
+        }
 
-    .fade-in-up {
-      animation: fadeInUp 0.8s ease-out;
-=======
-        font-family: 'Inter', sans-serif;
->>>>>>> c58b3294d1b7540a1746fcb116621dffec29892d
-    }
-  </style>
+        /* Animação suave de entrada */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 flex flex-col min-h-screen">
 
-<<<<<<< HEAD
-  <!-- ======= CABEÇALHO ======= -->
-  <header class="bg-white shadow-md dark:bg-gray-800">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-3xl font-bold text-teal-600 dark:text-teal-500">Vida e Esperança</h1>
-      <ul class="flex space-x-6">
-        <li><a href="index.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Início</a></li>
-        <li><a href="projetos.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Projetos</a></li>
-        <li><a href="cadastro.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Cadastro</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- ======= CONTEÚDO PRINCIPAL ======= -->
-  <main class="container mx-auto px-6 py-12 flex-grow flex items-center justify-center">
-    <div class="bg-white dark:bg-gray-800 p-10 rounded-2xl shadow-lg max-w-lg text-center fade-in-up">
-
-      <!-- Ícone animado -->
-      <div class="flex justify-center mb-6">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-teal-600 dark:text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-        </svg>
-      </div>
-
-      <h1 class="text-3xl font-bold text-teal-600 dark:text-teal-500 mb-4">✅ Cadastro enviado com sucesso!</h1>
-      <p class="text-gray-700 dark:text-gray-200 mb-6">
-        Obrigado por se cadastrar na <strong>ONG Vida e Esperança</strong>!  
-        Em breve entraremos em contato por e-mail.
-      </p>
-
-      <a href="index.html"
-         class="bg-teal-600 text-white px-8 py-3 rounded-lg hover:bg-teal-700 transition duration-300 font-semibold shadow-md">
-         Voltar ao Início
-      </a>
-    </div>
-  </main>
-
-  <!-- ======= RODAPÉ ======= -->
-  <footer class="bg-gray-800 text-gray-200 mt-16 py-8">
-    <div class="container mx-auto px-6 text-center">
-      <p>&copy; 2025 ONG Vida e Esperança. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-</body>
-</html>
-=======
-    <header class="bg-white shadow-md dark:bg-gray-800">
+    <header class="bg-blue-800 shadow-md dark:bg-blue-900">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-teal-600 dark:text-teal-500"> Vida e Esperança </h1>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Início</a></li>
-                <li><a href="projetos.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Projetos</a></li>
-                <li><a href="cadastro.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Cadastro</a></li>
+            <h1 class="text-3xl font-bold text-teal-400 dark:text-teal-300">Vida e Esperança</h1>
+
+            <button class="menu-toggle text-3xl md:hidden focus:outline-none text-white" aria-label="Abrir menu de navegação">☰</button>
+
+            <ul id="menu-links" class="hidden md:flex space-x-6 text-white font-semibold">
+                <li><a href="index.html" class="hover:text-teal-300">Início</a></li>
+                <li><a href="projetos.html" class="hover:text-teal-300">Projetos</a></li>
+                <li><a href="cadastro.html" class="hover:text-teal-300">Cadastro</a></li>
             </ul>
+
+            <button id="theme-toggle" class="ml-4 p-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200" aria-label="Alternar modo escuro">
+                🌙
+            </button>
         </nav>
+
+        <div id="menu-mobile" class="hidden bg-blue-900 text-white md:hidden">
+            <ul class="flex flex-col items-center space-y-4 py-4 font-semibold">
+                <li><a href="index.html" class="hover:text-teal-300">Início</a></li>
+                <li><a href="projetos.html" class="hover:text-teal-300">Projetos</a></li>
+                <li><a href="cadastro.html" class="hover:text-teal-300">Cadastro</a></li>
+            </ul>
+        </div>
     </header>
 
     <main class="container mx-auto px-6 py-12 flex-grow flex items-center justify-center">
-        <div class="bg-white dark:bg-gray-800 p-10 rounded-lg shadow-lg max-w-lg text-center">
+        <div class="bg-white dark:bg-gray-800 p-10 rounded-2xl shadow-lg max-w-lg text-center fade-in-up">
+
+            <div class="flex justify-center mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-teal-600 dark:text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+
             <h1 class="text-3xl font-bold text-teal-600 dark:text-teal-500 mb-4">✅ Cadastro enviado com sucesso!</h1>
             <p class="text-gray-700 dark:text-gray-200 mb-6">
-              Obrigado por se cadastrar na <strong>ONG Vida e Esperança</strong>!   
-              Em breve entraremos em contato por e-mail.
+                Obrigado por se cadastrar na <strong>ONG Vida e Esperança</strong>!
+                Em breve entraremos em contato por e-mail.
             </p>
-            <a href="index.html" 
-               class="bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition duration-300">
-               Voltar ao Início
+
+            <a href="index.html" class="bg-teal-600 text-white px-8 py-3 rounded-lg hover:bg-teal-700 transition duration-300 font-semibold shadow-md">
+                Voltar ao Início
             </a>
         </div>
     </main>
 
-    <footer class="bg-gray-800 text-gray-200 mt-16 py-8">
+    <footer class="bg-gray-800 text-white mt-16 py-8">
         <div class="container mx-auto px-6 text-center">
             <p>&copy; 2025 ONG Vida e Esperança. Todos os direitos reservados.</p>
         </div>
     </footer>
 
+    <script src="js/main.js" defer></script>
+
 </body>
 </html>
->>>>>>> c58b3294d1b7540a1746fcb116621dffec29892d

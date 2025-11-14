@@ -1,216 +1,121 @@
-<!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="pt-BR" class="">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça os projetos da ONG Vida e Esperança.">
-  <title>Projetos - Vida e Esperança</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { darkMode: 'class' }
-  </script>
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-    body { font-family: 'Inter', sans-serif; transition: background-color 0.4s, color 0.4s; }
-  </style>
-</head>
-
-<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200">
-
-  <!-- ======= CABEÇALHO ======= -->
-  <header class="bg-blue-800 shadow-md dark:bg-blue-900">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-3xl font-bold text-teal-400 dark:text-teal-300">Vida e Esperança</h1>
-
-      <button class="menu-toggle text-3xl md:hidden focus:outline-none text-white">☰</button>
-
-      <ul id="menu-links" class="hidden md:flex space-x-6 text-white font-semibold">
-        <li><a href="index.html" class="hover:text-teal-300">Início</a></li>
-        <li><a href="projetos.html" class="hover:text-teal-300">Projetos</a></li>
-        <li><a href="cadastro.html" class="hover:text-teal-300">Cadastro</a></li>
-      </ul>
-
-      <button id="theme-toggle"
-        class="ml-4 p-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200">
-        🌙
-      </button>
-    </nav>
-
-    <div id="menu-mobile" class="hidden bg-blue-900 text-white md:hidden">
-      <ul class="flex flex-col items-center space-y-4 py-4 font-semibold">
-        <li><a href="index.html" class="hover:text-teal-300">Início</a></li>
-        <li><a href="projetos.html" class="hover:text-teal-300">Projetos</a></li>
-        <li><a href="cadastro.html" class="hover:text-teal-300">Cadastro</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <!-- ======= CONTEÚDO ======= -->
-  <main class="container mx-auto px-6 py-12">
-    <h2 class="text-4xl font-bold text-blue-800 mb-10 text-center dark:text-teal-300">
-      Nossos Projetos
-    </h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-        <img src="imagens/doa-roupas.png" alt="Projeto Educação" class="rounded-md mb-4 mx-auto">
-        <h3 class="text-2xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Vestes para Todos</h3>
-        <p>Arrecadamos roupas usadas e semi novas para auxiliar a população mais vulnerável.</p>
-      </div>
-
-      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-        <img src="imagens/doa-cesta.png" alt="Projeto Saúde" class="rounded-md mb-4 mx-auto">
-    
-    
-        <h3 class="text-2xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Campanha de Doaçao</h3>
-        <p>Promovemos campanhade doação de alimentos com foco em comunidades carentes.</p>
-      </div>
-
-      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-        <img src="imagens/projeto3.jpg" alt="Projeto Sustentabilidade" class="rounded-md mb-4 mx-auto">
-        <h3 class="text-2xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Sustentabilidade Comunitária</h3>
-        <p>Incentivamos hortas urbanas e o uso consciente dos recursos naturais.</p>
-      </div>
-    </div>
-
-     <section class="bg-teal-700 text-white p-8 rounded-lg shadow-lg">
-=======
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vida e Esperança - Projetos</title>
-
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A ONG Vida e Esperança transforma comunidades...">
+    <title>ONG Vida e Esperança - Início</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class"
+        }
+    </script>
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-        
         body {
-            font-family: 'Inter', sans-serif !important;
+            font-family: 'Inter', sans-serif;
+            transition: background-color .4s, color .4s;
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200">
 
-    <header class="bg-white shadow-md dark:bg-gray-800">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-teal-600 dark:text-teal-500">Vida e Esperança</h1>
-            <ul class="flex space-x-6">
-
-                <li><a href="index.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Início</a></li>
-                
-                <li><a href="projetos.html" class="text-teal-600 font-semibold border-b-2 border-teal-600 pb-1 dark:text-teal-500 dark:border-teal-500">Projetos</a></li>
-                
-                <li><a href="cadastro.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Cadastro</a></li>
-                
-            </ul>
-            <button class="menu-toggle">☰</button>
-
-        </nav>
-    </header>
-
-    <main class="container mx-auto px-6 py-12">
+<header class="bg-blue-800 shadow-md dark:bg-blue-900">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-teal-400 dark:text-teal-300">Vida e Esperança</h1>
         
-        <h2 class="text-4xl font-bold text-blue-800 mb-10 text-center">Nossos Projetos e Como Ajudar</h2>
-
-          <section class="mb-16 bg-white text-black-800 p-8 rounded-lg shadow-lg">
-          <h3 class="text-3xl font-semibold text-gray-800 mb-6">Seja um Voluntário</h3>
-            
-            <div class="flex flex-col md:flex-row items-start gap-8">
-
-                <div class="md:w-1/2 flex justify-center">
-                    <img src="imagens/Voluntariado.jpg" alt="Voluntariado da ONG Vida e Esperança" class="rounded-lg shadow-md w-full max-w-md">
-                </div>
-
-                <div class="md:w-1/2 flex flex-col gap-6">
-                    
-                    <div>
-                        <p class="text-lg leading-relaxed mb-4 texto-preto">
-  O voluntariado é a alma da nossa organização. Precisamos de pessoas comprometidas em diversas áreas, desde a administração até o trabalho de campo.
-</p>
-<p class="text-lg leading-relaxed mb-4 texto-preto">
-  Se você tem habilidades em educação, saúde, marketing, ou simplesmente tem um grande coração e vontade de ajudar, seu lugar é aqui.
-</p>
-
-                          <a href="cadastro.html" class="text-teal-600 font-bold hover:underline dark:text-teal-500 dark:hover:text-teal-400">preencha nosso formulário de cadastro</a>
-                    </div>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <img src="imagens/doa-roupas.png" alt="Doação de roupas" class="rounded-lg shadow-md w-full sm:w-1/2 object-cover">
-                        <img src="imagens/doa-cesta.png" alt="Doação de cestas básicas" class="rounded-lg shadow-md w-full sm:w-1/2 object-cover">
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section class="bg-teal-700 text-white p-8 rounded-lg shadow-lg">
->>>>>>> c58b3294d1b7540a1746fcb116621dffec29892d
-            <h3 class="text-3xl font-semibold mb-6 text-center">Como Doar</h3>
-            <div class="max-w-2xl mx-auto text-center">
-                <p class="text-lg leading-relaxed mb-6">
-                    Sua doação é fundamental para mantermos nossos projetos ativos. Cada contribuição, não importa o valor, faz uma enorme diferença na vida de centenas de pessoas.
-                </p>
-<<<<<<< HEAD
-                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-inner">
-                    <h4 class="text-2xl font-bold text-teal-600 mb-4">Doe via PIX</h4>
-                    <p class="text-xl font-mono bg-gray-100 p-3 rounded">
-                        chave-pix@vidaeesperanca.org
-                    </p>
-=======
-                
-                <div class="bg-white text-gray-800 dark:bg-gray-700 dark:text-gray-200 p-6 rounded-lg shadow-inner">
-                    <h4 class="text-2xl font-bold text-teal-600 dark:text-teal-500 mb-4">Doe via PIX</h4>
-                    
-                    
-                   
-                    <p>Nossa Chave PIX é: <span class="pix-key">chave-pix@vidaeesperanca.org</span></p>
-                      
-                    
->>>>>>> c58b3294d1b7540a1746fcb116621dffec29892d
-                    <p class="mt-4">Ou, se preferir, faça uma transferência bancária:</p>
-                    <ul class="mt-2 text-left w-fit mx-auto">
-                        <li><strong>Banco:</strong> 123 - Banco Exemplo S.A.</li>
-                        <li><strong>Agência:</strong> 0001</li>
-                        <li><strong>Conta Corrente:</strong> 12345-6</li>
-                        <li><strong>CNPJ:</strong> 12.345.678/0001-99</li>
-                    </ul>
-<<<<<<< HEAD
-  </main>
-
-  <!-- ======= RODAPÉ ======= -->
-  <footer class="bg-gray-800 text-white mt-16 py-8">
-    <div class="container mx-auto px-6 text-center">
-      <p>&copy; 2025 Vida e Esperança. Todos os direitos reservados.</p>
+        <button class="menu-toggle text-3xl md:hidden focus:outline-none text-white" aria-label="Abrir menu de navegação">☰</button>
+        
+        <ul id="menu-links" class="hidden md:flex space-x-6 text-white font-semibold">
+            <li><a href="index.html" class="hover:text-teal-300">Início</a></li>
+            <li><a href="projetos.html" class="hover:text-teal-300">Projetos</a></li>
+            <li><a href="cadastro.html" class="hover:text-teal-300">Cadastro</a></li>
+        </ul>
+        
+        <button id="theme-toggle" class="ml-4 p-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200" aria-label="Alternar modo escuro">
+            🌙
+        </button>
+    </nav>
+    
+    <div id="menu-mobile" class="hidden bg-blue-900 text-white md:hidden">
+        <ul class="flex flex-col items-center space-y-4 py-4 font-semibold">
+            <li><a href="index.html" class="hover:text-teal-300">Início</a></li>
+            <li><a href="projetos.html" class="hover:text-teal-300">Projetos</a></li>
+            <li><a href="cadastro.html" class="hover:text-teal-300">Cadastro</a></li>
+        </ul>
     </div>
-  </footer>
+</header>
 
-  <script src="js/main.js"></script>
-</body>
-</html>
-=======
-                </div>
+<main class="container mx-auto px-6 py-12">
+    <section class="mb-16">
+        <h2 class="text-4xl font-bold text-blue-800 mb-10 text-center dark:text-teal-300">
+            Sobre Nossa Organização
+        </h2>
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <p class="text-lg leading-relaxed mb-4">
+                    A ONG Vida e Esperança é dedicada a transformar comunidades através da educação, saúde e desenvolvimento sustentável. Fundada em 2025, nossa missão é criar oportunidades para que todos possam alcançar seu potencial máximo.
+                </p>
+                <p class="text-lg leading-relaxed mb-4">
+                    Acreditamos no poder da ação coletiva e no impacto duradouro do voluntariado. Junte-se a nós e faça parte dessa mudança.
+                </p>
+                <h3 class="text-2xl font-bold text-gray-700 dark:text-gray-100 mt-6 mb-2">Missão</h3>
+                <p class="text-lg leading-relaxed mb-4">
+                    Promover o bem-estar e a inclusão social de pessoas em situação de vulnerabilidade, oferecendo apoio material, emocional e educacional.
+                </p>
+                <h3 class="text-2xl font-bold text-gray-700 dark:text-gray-100 mt-6 mb-2">Visão</h3>
+                <p class="text-lg leading-relaxed mb-4">
+                    Ser referência em ações de solidariedade e sustentabilidade, inspirando comunidades a multiplicarem gestos de amor e esperança.
+                </p>
+                <h3 class="text-2xl font-bold text-gray-700 dark:text-gray-100 mt-6 mb-2">Valores</h3>
+                <ul class="list-disc list-inside text-lg leading-relaxed">
+                    <li>Respeito à dignidade humana;</li>
+                    <li>Transparência e responsabilidade social;</li>
+                    <li>Solidariedade e empatia;</li>
+                    <li>Comprometimento com a transformação social.</li>
+                </ul>
             </div>
-        </section>
-
-    </main>
-
-    <footer class="bg-gray-800 text-white mt-16 py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 Vida e Esperança. Todos os direitos reservados.</p>
+            <div class="md:w-1/2">
+                <img src="imagens/projeto3.jpg" alt="Foto de um projeto da ONG Vida e Esperança" width="800" class="rounded-lg shadow-md">
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <script src="js/script.js"></script>
+    <section class="bg-gray-800 px-12 py-8 rounded-lg shadow-lg text-white">
+        <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-center">Entre em Contato</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <h3 class="text-xl font-semibold text-teal-400 dark:text-teal-300 mb-2">Endereço</h3>
+                <p>Rua das Flores, 123</p>
+                <p>Cidade Exemplo, Estado, CEP 12345-678</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-teal-400 dark:text-teal-300 mb-2">Telefone</h3>
+                <p>(11) 98765-4321</p>
+                <p>Segunda a Sexta, 9h às 18h</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-teal-400 dark:text-teal-300 mb-2">Email</h3>
+                <p>monicasena282@gmail.com</p>
+                <p>Respondemos em até 24h</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-gray-800 text-white mt-16 py-8">
+    <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2025 Vida e Esperança. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="js/main.js" defer></script>
 
 </body>
 </html>
->>>>>>> c58b3294d1b7540a1746fcb116621dffec29892d

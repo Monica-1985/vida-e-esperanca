@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang=pt-BR>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Vida e Esperança - Cadastro</title>
+<script src=https://cdn.tailwindcss.com></script>
+<script>tailwind.config={darkMode:"class"}</script>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel=stylesheet>
+<style>body{font-family:Inter,sans-serif;transition:background-color .4s,color .4s}input:invalid,select:invalid{border-color:#e53e3e}</style>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+<header class="bg-blue-800 shadow-md dark:bg-blue-900">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<h1 class="text-3xl font-bold text-teal-400 dark:text-teal-300">Vida e Esperança</h1>
+<button class="menu-toggle text-3xl md:hidden focus:outline-none text-white" aria-label="Abrir menu de navegação">☰</button>
+<ul id=menu-links class="hidden md:flex space-x-6 text-white font-semibold">
+<li><a href=index.html class=hover:text-teal-300>Início</a></li>
+<li><a href=projetos.html class=hover:text-teal-300>Projetos</a></li>
+<li><a href=cadastro.html class=hover:text-teal-300>Cadastro</a></li>
+</ul>
+<button id=theme-toggle class="ml-4 p-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200" aria-label="Alternar modo escuro">
+🌙
+</button>
+</nav>
+<div id=menu-mobile class="hidden bg-blue-900 text-white md:hidden">
+<ul class="flex flex-col items-center space-y-4 py-4 font-semibold">
+<li><a href=index.html class=hover:text-teal-300>Início</a></li>
+<li><a href=projetos.html class=hover:text-teal-300>Projetos</a></li>
+<li><a href=cadastro.html class=hover:text-teal-300>Cadastro</a></li>
+</ul>
+</div>
+</header>
+<main class="container mx-auto px-6 py-12">
+<h2 class="text-4xl font-bold text-blue-800 mb-10 text-center dark:text-teal-300">Formulário de Cadastro</h2>
+<div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 p-8 md:py-12 rounded-lg shadow-lg">
+<img src=imagens/imagem3.png alt="Banner convidativo para o cadastro" class="rounded-lg shadow-md w-full h-auto mb-8">
+<form action=https://formsubmit.co/monicasena282@gmail.com method=POST id=cadastro-form class=space-y-8>
+<input type=hidden name=_next value=https://monica-1985.github.io/vidaeesperanca/sucesso.html>
+<input type=hidden name=_captcha value=false>
+<fieldset class="border border-gray-300 dark:border-gray-600 p-6 rounded-lg">
+<legend class="text-2xl font-semibold text-teal-600 dark:text-teal-500 px-2 mb-4">Dados Pessoais</legend>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class=md:col-span-2>
+<label for=nome class="block text-sm font-medium dark:text-gray-200 mb-1">Nome Completo</label>
+<input id=nome name=nome class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:focus:ring-teal-500 dark:focus:border-teal-500" required>
+</div>
+<div>
+<label for=email class="block text-sm font-medium dark:text-gray-200 mb-1">E-mail</label>
+<input type=email id=email name=email class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-400 dark:focus:ring-teal-500 dark:focus:border-teal-500" placeholder=seu.email@exemplo.com required>
+</div>
+<div>
+<label for=data_nascimento class="block text-sm font-medium dark:text-gray-200 mb-1">Data de Nascimento</label>
+<input type=date id=data_nascimento name=data_nascimento class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:focus:ring-teal-500 dark:focus:border-teal-500" required>
+</div>
+<div>
+<label for=cpf class="block text-sm font-medium dark:text-gray-200 mb-1">CPF</label>
+<input id=cpf name=cpf class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-400 dark:focus:ring-teal-500 dark:focus:border-teal-500" placeholder=000.000.000-00 required pattern=\d{3}\.\d{3}\.\d{3}-\d{2}>
+</div>
+<div>
+<label for=telefone class="block text-sm font-medium dark:text-gray-200 mb-1">Telefone / Celular</label>
+<input type=tel id=telefone name=telefone class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-400 dark:focus:ring-teal-500 dark:focus:border-teal-500" placeholder="(00) 00000-0000" required pattern="\(\d{2}\) \d{4,5}-\d{4}">
+</div>
+</div>
+</fieldset>
+<fieldset class="border border-gray-300 dark:border-gray-600 p-6 rounded-lg">
+<legend class="text-2xl font-semibold text-teal-600 dark:text-teal-500 px-2 mb-4">Endereço</legend>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div>
+<label for=cep class="block text-sm font-medium dark:text-gray-200 mb-1">CEP</label>
+<input id=cep name=cep class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-400 dark:focus:ring-teal-500 dark:focus:border-teal-500" placeholder=00000-000 required pattern=\d{5}-\d{3}>
+</div>
+<div class=md:col-span-2>
+<label for=endereco class="block text-sm font-medium dark:text-gray-200 mb-1">Endereço (Rua, Nº, Bairro)</label>
+<input id=endereco name=endereco class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:focus:ring-teal-500 dark:focus:border-teal-500" required>
+</div>
+<div>
+<label for=cidade class="block text-sm font-medium dark:text-gray-200 mb-1">Cidade</label>
+<input id=cidade name=cidade class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:focus:ring-teal-500 dark:focus:border-teal-500" required>
+</div>
+<div>
+<label for=estado class="block text-sm font-medium dark:text-gray-200 mb-1">Estado</label>
+<select id=estado name=estado class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:focus:ring-teal-500 dark:focus:border-teal-500" required>
+<option value="" disabled selected>Selecione...</option>
+<option value=AC>Acre</option>
+<option value=AL>Alagoas</option>
+<option value=AP>Amapá</option>
+<option value=AM>Amazonas</option>
+<option value=BA>Bahia</option>
+<option value=CE>Ceará</option>
+<option value=DF>Distrito Federal</option>
+<option value=ES>Espírito Santo</option>
+<option value=GO>Goiás</option>
+<option value=MA>Maranhão</option>
+<option value=MT>Mato Grosso</option>
+<option value=MS>Mato Grosso do Sul</option>
+<option value=MG>Minas Gerais</option>
+<option value=PA>Pará</option>
+<option value=PB>Paraíba</option>
+<option value=PR>Paraná</option>
+<option value=PE>Pernambuco</option>
+<option value=PI>Piauí</option>
+<option value=RJ>Rio de Janeiro</option>
+<option value=RN>Rio Grande do Norte</option>
+<option value=RS>Rio Grande do Sul</option>
+<option value=RO>Rondônia</option>
+<option value=RR>Roraima</option>
+<option value=SC>Santa Catarina</option>
+<option value=SP>São Paulo</option>
+<option value=SE>Sergipe</option>
+<option value=TO>Tocantins</option>
+</select>
+</div>
+</div>
+</fieldset>
+<div class=text-center>
+<button type=submit class="bg-teal-600 text-white font-bold text-lg px-12 py-3 rounded-lg shadow-md hover:bg-teal-700 transition duration-300 focus:outline-none focus:ring-4 focus:ring-teal-500 focus:ring-opacity-50">
+Enviar Cadastro
+</button>
+</div>
+</form>
+</div>
+</main>
+<footer class="bg-gray-800 text-white mt-16 py-8">
+<div class="container mx-auto px-6 text-center">
+<p>&copy; 2025 ONG Vida e Esperança. Todos os direitos reservados.</p>
+</div>
+</footer>
+<script src=js/main.js defer></script>
+<script>document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("cpf"),t=document.getElementById("cep"),d=document.getElementById("telefone");e&&e.addEventListener("input",(e=>{let t=e.target.value.replace(/\D/g,"");t=t.substring(0,11),t.length>9?t=t.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/,"$1.$2.$3-$4"):t.length>6?t=t.replace(/(\d{3})(\d{3})(\d{1,3})/,"$1.$2.$3"):t.length>3&&(t=t.replace(/(\d{3})(\d{1,3})/,"$1.$2")),e.target.value=t})),t&&t.addEventListener("input",(e=>{let t=e.target.value.replace(/\D/g,"");t=t.substring(0,8),t.length>5&&(t=t.replace(/(\d{5})(\d{1,3})/,"$1-$2")),e.target.value=t})),d&&d.addEventListener("input",(e=>{let t=e.target.value.replace(/\D/g,"");t=t.substring(0,11),t.length>10?t=t.replace(/(\d{2})(\d{5})(\d{4})/,"($1) $2-$3"):t.length>6?t=t.replace(/(\d{2})(\d{4})(\d{4})/,"($1) $2-$3"):t.length>2?t=t.replace(/(\d{2})(\d{1,5})/,"($1) $2"):t.length>0&&(t=t.replace(/(\d{1,2})/,"($1")),e.target.value=t}))}))</script>
+</body>
+</html>
