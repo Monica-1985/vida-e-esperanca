@@ -1,0 +1,9 @@
+/* src/input.css */
+
+/* Importa a fonte que você estava usando no <style> do HTML */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* As diretivas do Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
